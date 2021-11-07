@@ -1,0 +1,21 @@
+Source: acme-client
+Section: misc
+Maintainer: Baytuch <alexander@it-hobby.km.ua>
+Standards-Version: 0.2.2
+
+Package: acme-client
+Section: misc
+Priority: optional
+Depends: ${shlibs:Depends}
+Architecture: any
+Homepage: https://www.it-hobby.km.ua/
+Description: acme-client util
+ acme-client is an Automatic Certificate Management Environment (ACME)
+ client: it looks in its configuration for a domain section corresponding
+ to the domain given as command line argument and uses that configuration
+ to retrieve an X.509 certificate which can be used to provide domain name
+ validation (i.e. prove that the domain is who it says it is).  The cer‐
+ tificates are typically used to provide HTTPS for web servers, but can be
+ used in any situation where domain name validation is required (such as
+ mail servers).
+
