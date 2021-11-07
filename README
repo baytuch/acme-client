@@ -86,3 +86,15 @@ AUTHORS
      <kristaps@bsd.lv>.
 
 BSD                              June 15, 2019                             BSD
+
+COMPILING
+     sudo apt-get install build-essential
+     sudo apt-get install bison
+     sudo apt-get install autoconf
+     sudo apt-get install libssl-dev
+     sudo apt-get install libbsd0 libbsd-dev
+     git clone https://github.com/baytuch/acme-client.git
+     cd acme-client/
+     autoreconf --install
+     ./configure --prefix=/usr
+     make
