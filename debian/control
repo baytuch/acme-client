@@ -1,15 +1,17 @@
 Source: acme-client
-Section: misc
+Section: Networking
+Priority: optional
 Maintainer: Baytuch <alexander@it-hobby.km.ua>
-Standards-Version: 0.2.2
+Build-Depends: debhelper, dh-autoreconf, bison, libssl-dev, libbsd-dev
+Standards-Version: 3.9.3
 
 Package: acme-client
-Section: misc
+Section: Networking
 Priority: optional
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Architecture: any
-Homepage: https://www.it-hobby.km.ua/
-Description: acme-client util
+Homepage: https://kristaps.bsd.lv/
+Description: acme-client is an Automatic Certificate Management Environment
  acme-client is an Automatic Certificate Management Environment (ACME)
  client: it looks in its configuration for a domain section corresponding
  to the domain given as command line argument and uses that configuration
