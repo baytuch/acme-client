@@ -98,3 +98,14 @@ COMPILING
      autoreconf --install
      ./configure --prefix=/usr
      make
+
+CREATE PKG:
+     sudo apt-get install build-essential
+     sudo apt-get install fakeroot dh-make
+     sudo apt-get install bison
+     sudo apt-get install autoconf
+     sudo apt-get install libssl-dev
+     sudo apt-get install libbsd0 libbsd-dev
+     git clone https://github.com/baytuch/acme-client.git
+     cd acme-client/
+     dpkg-buildpackage -rfakeroot -b --no-sign
