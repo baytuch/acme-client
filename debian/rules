@@ -11,4 +11,8 @@ override_dh_auto_configure:
 		--prefix=/usr
 
 override_dh_install:
+	install -d debian/acme-client/etc/acme/
+	install -d debian/acme-client/var/www/acme/
+	install -m 644 "acme-client.conf" "debian/acme-client/etc/acme-client.conf"
 	dh_install
+
