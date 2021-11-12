@@ -8,7 +8,7 @@ Standards-Version: 3.9.3
 Package: acme-client
 Section: Networking
 Priority: optional
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, apache2
 Architecture: any
 Homepage: https://kristaps.bsd.lv/
 Description: acme-client is an Automatic Certificate Management Environment
