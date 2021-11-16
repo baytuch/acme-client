@@ -1,30 +1,30 @@
-acme-client (0.2.3) internal; urgency=medium
+acme-client (0.2.3-1) unstable; urgency=medium
 
   * Fix checking for pledge and unveil
   * I've used #if HAVE_PLEDGE, which does not play nicely together with -Wundef. So fix that.
 
  -- Baytuch <alexander@it-hobby.km.ua>  Tue, 22 Aug 2019 13:32:29 +0200
 
-acme-client (0.2.2) internal; urgency=medium
+acme-client (0.2.2-1) unstable; urgency=medium
 
   * Provide User-Agent header as RFC 8555 mandates
 
  -- Baytuch <alexander@it-hobby.km.ua>  Sat, 13 Jul 2019 13:24:39 +0200
 
-acme-client (0.2.1) internal; urgency=medium
+acme-client (0.2.1-1) unstable; urgency=medium
 
   * Fix build from tarball
 
  -- Baytuch <alexander@it-hobby.km.ua>  Tue, 09 Jul 2019 13:24:39 +0200
 
-acme-client (0.2.0) internal; urgency=medium
+acme-client (0.2.0-1) unstable; urgency=medium
 
   * Use ACME protocol v2
   * Do not require root to run
 
  -- Baytuch <alexander@it-hobby.km.ua>  Mon, 08 Jul 2019 13:24:39 +0200
 
-acme-client (0.1.0) internal; urgency=medium
+acme-client (0.1.0-1) unstable; urgency=medium
 
   * Initial port using ACME protocol v1
 
